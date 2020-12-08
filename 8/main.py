@@ -1,5 +1,4 @@
-from typing import List, Dict, Set
-from pprint import pprint
+from typing import Dict, Set
 
 FILENAME = "input.txt"
 
