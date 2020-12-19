@@ -47,7 +47,7 @@ def generate_grammar(rules, curr_num: int = 0, depth: int = 0) -> str:
         for num in L:
             this_rule += generate_grammar(rules, num, depth + 1)
 
-        sub_result.append(this_rule)
+        sub_results.append(this_rule)
 
     result += ")|(".join(sub_results) + "))"
 
@@ -85,6 +85,6 @@ def part_2():
     print(f"{count} messages completely match rule 0.")
 
 if __name__ == "__main__":
-    part_1()
-    part_2()
+    # part_1()
+    # part_2()
     pass
